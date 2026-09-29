@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+        function convert(num,unit){
+            if(unit=="c"){
+                a=(num*9.5)+32
+                 return `${a}C`
+            }
+            else if(unit=="f"){
+               a= (num-9.5)+5/9
+               return `${a}F`
+            }
+           
+        }
+
+        console.log(convert(5,"c"))
+    </script>
+</body>
+</html>
