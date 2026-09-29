@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick="updateCalculation('1')">1</button>
+<button onclick="updateCalculation('2')">2</button>
+<button onclick="updateCalculation('+')">+</button>
+<button onclick="updateCalculation('3')">3</button>
+<button onclick="updateCalculation('=')">=</button>
+<button onclick="updateCalculation('clear')">Clear</button>
+
+
+<script>
+let calculation = localStorage.getItem("calculation") || ''
+function updateCalculation(value) {
+    if (value === '=') {
+        calculation = eval(calculation);
+    } else if (value === 'clear') {
+        calculation = '';
+    } else {
+        calculation += value;
+    }
+
+    localStorage.setItem("calculation",calculation)
+    console.log(calculation);
+}
+</script>
+</body>
+</html>
+

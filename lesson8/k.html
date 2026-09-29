@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <button onclick="game('heads')">heads</button>
+<button onclick="game('tails')">tails</button>
+<script>
+    const score=localStorage.getItem('score')||''
+function game(guess) {
+    let random = Math.random();
+    let result;
+    
+    if (random < 0.5) {
+        result = 'heads';
+    } else {
+        result = 'tails';
+    }
+
+    if (guess === result) {
+       score.win+=1
+    } else {
+        score.lose+=1
+    }
+  
+    localStorage.setItem('score',score)
+    
+}
+</script>
+</body>
+</html>
+<script>
