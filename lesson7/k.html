@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick="fun(1)">add to cart</button>
+     <button onclick="fun(2)">+2</button>
+      <button onclick="fun(3)">+3</button>
+       <button onclick="fun(0)">clear</button>
+
+    <script>
+        let cart=0
+        function fun(num){
+            
+
+            if(num==0){
+                cart=0
+            }
+            if(cart<0){
+                alert("invalid quntity")
+            }
+            cart+=num
+            console.log(cart)
+        }
+    </script>
+</body>
+</html>
