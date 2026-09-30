@@ -4,16 +4,19 @@
     
 </head>
 <body>
-    <button onclick="const h=document.querySelector('.head').innerHTML" class="head">head</button>
-    <button onclick="const t=document.querySelector('.head').innerHTML" class="tails">tails</button>
+    <button onclick="h()" class="head">head</button>
+    <button onclick="t()" class="tails">tails</button>
     <p class="p"></p>
     <script>
-      if(h){
-        document.querySelector('.p').innerHTML=` u select ${h}`
-      }
-      else{
-         document.querySelector('.p').innerHTML=` u select ${t}`
-      }
+     function h(){
+        const h=document.querySelector('.head').innerHTML
+        document.querySelector('.p').innerHTML=`u select ${h}`
+     }
+
+        function t() {
+            const t = document.querySelector('.tails').innerHTML;
+            document.querySelector('.p').innerHTML = `u select ${t}`;
+        }
     </script>
 </body>
 </html>

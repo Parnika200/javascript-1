@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <input  type="text" class="in">
+    <button onclick="sub()">submit</button>
+    <p class="p"></p>
+
+    <script>
+        function sub(){
+            const e=document.querySelector('.in')
+            const name=e.value
+
+            document.querySelector('.p').innerHTML=`name is ${name}`
+        }
+    </script>
+</body>
+</html>
