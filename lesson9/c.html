@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button onclick="const h=document.querySelector('.head').innerHTML" class="head">head</button>
+    <button onclick="const t=document.querySelector('.head').innerHTML" class="tails">tails</button>
+    <p class="p"></p>
+    <script>
+      if(h){
+        document.querySelector('.p').innerHTML=` u select ${h}`
+      }
+      else{
+         document.querySelector('.p').innerHTML=` u select ${t}`
+      }
+    </script>
+</body>
+</html>
