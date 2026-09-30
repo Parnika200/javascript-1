@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p class="calculation"></p>
+
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button onclick="add('+')">+</button>
+    <button onclick="calculate()">=</button>
+
+    <script>
+        let calculation = localStorage.getItem('calculation') || '';
+
+        document.querySelector('.calculation').innerHTML = calculation;
+
+        function add(value) {
+            calculation = calculation + value;
+
+            localStorage.setItem('calculation', calculation);
+
+            document.querySelector('.calculation').innerHTML = calculation;
+        }
+
+        function calculate() {
+            calculation = eval(calculation);
+
+            localStorage.setItem('calculation', calculation);
+
+            document.querySelector('.calculation').innerHTML = calculation;
+        }
+    </script>
+
+</body>
+</html>

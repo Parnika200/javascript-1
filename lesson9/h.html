@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" onkeyup="updateText()" class="input">
+
+<p class="text"></p>
+
+<script>
+        function updateText() {
+            const value = document.querySelector('.input').value
+
+         document.querySelector('.text').innerHTML = value
+        }
+    </script>
+
+</body>
+</html>
