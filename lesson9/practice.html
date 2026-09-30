@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+    <button class="b1" onclick="
+     sub()
+    ">Subscribed</button>
+
+    
+
+    <h1>Amazon Shipping Calculator</h1>
+
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+
+    <input type="text" placeholder="Cost of order" class="in">
+    <button onclick="sum()" class="b2">Calculate</button>
+    <p class="p"></p>
+    <br><br>
+
+    <a>CSS version of these projects</a>
+
+    <script>
+        function sub(){
+         const inp=document.querySelector('.in')
+
+     if(b1.innerHTML=='Subscribe'){
+        b1.innerHTML=='Subscribed'
+     }
+     else{
+         b1.innerHTML=='Subscribe'
+     }
+        }
+
+        function sum(){
+            const inp=document.querySelector(".in")
+            const i=inp.value
+            if(i<40){
+              sum=i+10
+              document.querySelector(".p").innerHTML=sum
+            }
+            else{
+                 document.querySelector(".p").innerHTML=i
+            }
+        }
+    </script>
+</body>
+</html>
