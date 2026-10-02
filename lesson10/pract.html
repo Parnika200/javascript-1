@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    .button{
+        background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width:100px;
+        height:40px
+    }
+
+     .b2{
+        background-color: rgb(16, 220, 94);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width:100px;
+        height:40px
+    }
+    .active{
+          background-color: rgb(221, 221, 221);
+        color:black
+    }
+
+     .new{
+          background-color: rgb(151, 243, 147);
+        color:black
+    }
+    /*.button:active{
+        background-color: rgb(221, 221, 221);
+        color:black
+    }*/
+   </style>
+</head>
+<body>
+    <button onclick="fun()" class="button js">subscribe</button>
+
+    <button onclick="cal()" class="b2 js2">calculate</button>
+    <script>
+       function fun(){
+       const b= document.querySelector(".js")
+
+       if(b.innerHTML=='subscribe'){
+           b.innerHTML="subscribed"
+       b.classList.add('active') 
+       }
+        else{
+            b.classList.remove("active")
+            b.innerHTML='subscribe'
+        }
+       }
+
+       function cal(){
+        const b=document.querySelector('.b2')
+        if(b.innerHTML=='calculate'){
+            b.innerHTML="done!"
+            b.classList.add('new')
+        }
+        else{
+            b.innerHTML='calculate'
+            b.classList.remove('new')
+        }
+       }
+    </script>
+</body>
+</html>
