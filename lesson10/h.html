@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="text" class="in">
+    <button onclick="fun()" class="b1">submit</button>
+    <p class="p"></p>
+
+    <script>
+        function fun(){
+            const i=document.querySelector(".in")
+            const text=i.value
+            if(text<0){
+             document.querySelector('.p').innerHTML="number cannot be less than 0"
+            }
+            else{
+            document.querySelector('.p').innerHTML=text
+            }
+            
+        }
+    </script>
+</body>
+</html>
