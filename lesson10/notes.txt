@@ -1,0 +1,3 @@
+classList.add("class")
+classList.remove("class")
+classList.toggle("class")

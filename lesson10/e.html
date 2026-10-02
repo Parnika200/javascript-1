@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button{
+             background-color: black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width:100px;
+        height:40px
+
+        }
+
+         .active{
+          background-color: rgb(221, 221, 221);
+        color:black
+    }
+    </style>
+</head>
+<body>
+    <button onclick="fun()" class="js">Gaming</button>
+    <button onclick="fun1()" class="js2">Music</button>
+    <button onclick="fun2()" class="js3">Tech</button>
+
+    <script>
+        function fun(){
+            const b=document.querySelector(".js")
+            
+            b.classList.toggle('active')
+        }
+
+         function fun1(){
+            const b=document.querySelector(".js2")
+            
+            b.classList.toggle('active')
+        }
+
+         function fun2(){
+            const b=document.querySelector(".js3")
+            
+            b.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
